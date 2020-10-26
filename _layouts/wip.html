@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
     <meta property="og:image" content="{{ site.url }}/assets/images/{{ page.image }}">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@lazyappHQ" />
+    <meta name="twitter:title" content="{{ page.title }}" />
+    <meta name="twitter:description" content="{{ page.description }}" />
+    <meta name="twitter:image" content="{{ site.url }}/assets/images/{{ page.image }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;531;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,500,700" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
@@ -13,11 +19,11 @@
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     {% if site.google_analytics and jekyll.environment == 'production' %}
     {% include analytics.html %}
-    <!-- {% include hotjar.html %} -->
+    {% include hotjar.html %}
     {% endif %}
     {% seo %}
   </head>
-  <div class="body-wrap boxed-container">
+  <div class="body-wrap-job boxed-container">
         <header class="site-header">
             <div class="container">
                 <div class="site-header-inner">
@@ -33,22 +39,22 @@
                               </ul>
                         </h1>
                     </div>
-                    <ul class="header-links list-reset m-0">
+                    <!-- <ul class="header-links list-reset m-0">
                         <li>
-                            <a href="/#why">Why Lazy?</a>
+                            <a href="#do">What You’ll Do</a>
                         </li>
                         <li>
-                            <a href="/#how">How it works</a>
+                            <a href="#you">Sounds Like You?</a>
                         </li>
                         <li>
-                            <a href="/#usecase">Use cases</a>
+                            <a href="#expect">What To Expect</a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </header>
 
-  <body class="is-boxed has-animations">
+  <body class="is-boxed-job has-animations">
     {{ content }}
 
     <footer class="site-footer">
@@ -57,38 +63,30 @@
                     <div class="brand footer-brand">
                         <img src="/assets/images/lazy-logo-simple.svg" alt="Lazy Logo" width="50px" height="50px" style="cursor: crosshair;">
                         <br>
-                        <p class="brand-text">Lazy is designed and developed by <a href="https://twitter.com/demtzu" target="_blank" style="color: #47A1F9;">Ahmed Men</a> in Brussels, Belgium.</p>
-                        <div style="display: flex; justify-content: center;">
-                            <a href="https://www.producthunt.com/posts/lazy?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-lazy" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=171680&theme=dark&period=daily" alt="Lazy - Control your environment with one easy keyboard shortcut | Product Hunt Embed" style="width: 170px; height: 37px;" width="170px" height="37px" /></a>
-                            </div>
+
+
                     </div>
 
                     <ul class="footer-links list-reset">
                         <li class="link-footer">
-                            <a style="display:block" href="mailto:ahmed@lazy-app.com?subject=Hey from lazy-app.com">
+                            <a style="display:block" href="mailto:ahmed@lazy-app.com,paolo@lazy-app.com?subject=Hey from lazy.so">
                               <div class="link-footer">
-                                <div class="link-footer-text"><p style="text-decoration: none; margin-bottom: 0px;">&nbsp;&nbsp;Contact&nbsp;&nbsp;</p></div>
+                                <div class="link-footer-text"><p style="text-decoration: none; margin-bottom: 0px;">&nbsp;&nbsp;Contact us&nbsp;&nbsp;</p></div>
                               </div>
                             </a>
                         </li>
+
                         <li>
-                            <a style="display:block" href="https://www.notion.so/lazyapp/Lazy-s-Public-Roadmap-2d1d6e546e954a7bafbc0114fe15beb6" target="_blank">
+                            <a style="display:block" href="/frontend-swe.html" target="_blank">
                               <div class="link-footer">
-                                <div class="link-footer-text"><p style="text-decoration: none; margin-bottom: 0px;">&nbsp;&nbsp;Public Roadmap&nbsp;&nbsp;</p></div>
-                              </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a style="display:block" href="mailto:ahmed@lazy-app.com?subject=Feature Request">
-                              <div class="link-footer">
-                                <div class="link-footer-text"><p style="text-decoration: none; margin-bottom: 0px;">&nbsp;&nbsp;Feature request&nbsp;&nbsp;</p></div>
+                                <div class="link-footer-text"><p style="text-decoration: none; margin-bottom: 0px;">&nbsp;&nbsp;We are hiring&nbsp;&nbsp;</p></div>
                                 <div class="link-footer-explore"><img src="assets/images/chevron-right.svg" alt="explore"></div>
                               </div>
                             </a>
                         </li>
                     </ul>
                     <ul class="footer-social-links list-reset">
-                        <li>
+                        <!-- <li>
                             <a href="https://www.producthunt.com/posts/lazy" target="_blank">
                                 <span class="screen-reader-text">Product Hunt</span>
                                 <img class="icone" src="assets/images/ph.svg" alt="product hunt Lazy" width="18px" height="18px">
@@ -105,7 +103,7 @@
                                 <span class="screen-reader-text">Linkedin</span>
                                 <img class="icone" src="assets/images/linkedin.svg" alt="product hunt Lazy" width="18px" height="18px">
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                     <div class="footer-copyright">&copy; 2020 Lazy app</div>
                 </div>

@@ -493,3 +493,12 @@ li.lili2 {
       margin:0 0px 10px 20px;
     }
 }
+
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 50vh;
+}

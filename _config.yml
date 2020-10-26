@@ -13,12 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Lazy App
+title: Lazy
 email: ahmed@lazy-app.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Keyboard-driven commands for your Mac that dramatically improves productivity.
+  WIP.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.lazy-app.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.lazy.so" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: demtzu
 github_username:  demtzu
 
@@ -51,4 +51,4 @@ sass:
   # style: compressed
 
   # Google Analytics
-google_analytics: UA-46102874-10
+# google_analytics: TODO
